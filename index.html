@@ -238,6 +238,34 @@ button:disabled{
   color:var(--muted);
   margin-top:14px
 }
+
+/* Developer and platform credits */
+.credits{
+  text-align:center;
+  margin-top:22px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:.76rem;
+  color:var(--muted);
+  line-height:1.8
+}
+
+.credits a{
+  color:var(--teal);
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px
+}
+
+.credits a:hover{
+  opacity:.8
+}
+
+@media (prefers-color-scheme:dark){
+  .credits a{
+    color:var(--gold)
+  }
+}
 </style>
 </head>
 
@@ -310,6 +338,20 @@ button:disabled{
     </p>
 
   </form>
+
+  <!-- Platform and developer credits -->
+  <div class="credits">
+    <div>
+      Powered by
+      <a
+        href="https://www.boldpeakshub.com"
+        target="_blank"
+        rel="noopener noreferrer">BoldPeaks Hub</a>
+    </div>
+    <div>
+      Developed by <strong>Bonheur Mwizerwa</strong>
+    </div>
+  </div>
 
 </div>
 
